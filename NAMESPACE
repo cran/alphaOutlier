@@ -1,0 +1,4 @@
+export(aout.binom, aout.cg, aout.chisq, aout.exp, aout.gandh, aout.hyper, aout.laplace, aout.logis, aout.mvnorm, aout.nbinom, aout.norm, aout.pareto, aout.pois, aout.weibull, aout.conttab)
+importFrom(nleqslv, nleqslv)
+importFrom(Rsolnp, solnp)
+importFrom(quantreg, rq.fit.fnc)
