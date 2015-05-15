@@ -1,7 +1,7 @@
 \name{aout.norm}
 \alias{aout.norm}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Find \eqn{\alpha}-outliers in normal data.
+\title{Find \eqn{\alpha}-outliers in normal data
 }
 \description{Given the parameters of a normal distribution, \code{aout.norm} identifies \eqn{\alpha}-outliers in a given data set.
 }

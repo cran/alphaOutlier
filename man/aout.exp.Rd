@@ -1,7 +1,7 @@
 \name{aout.exp}
 \alias{aout.exp}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Find \eqn{\alpha}-outliers in exponentially distributed data.
+\title{Find \eqn{\alpha}-outliers in exponentially distributed data
 }
 \description{Given the parameters of an exponential distribution, \code{aout.exp} identifies \eqn{\alpha}-outliers in a given data set.
 }
@@ -39,7 +39,7 @@ aout.exp(data, param, alpha = 0.1, hide.outliers = FALSE, theta = 0)
 \seealso{\code{\link{dexp}}
 }
 \examples{
-aout.chisq(attenu[,5], median(attenu[,5]), alpha = 0.05)
+aout.exp(attenu[,5], median(attenu[,5]), alpha = 0.05)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

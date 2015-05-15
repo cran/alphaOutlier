@@ -5,13 +5,14 @@ function(data, param, alpha = 0.1, hide.outliers = FALSE,
   if (is.data.frame(data)) data <- as.matrix(data)
   if (!is.matrix(data)) stop("data must be a matrix or data.frame.")
   N <- length(data)
-  if (param[1] == "ML" | param[1] == "L1" | param[1] == "MP") param.temp <- TRUE
-  else { if (!is.numeric(param) | !is.vector(param) | length(param) != N) 
+  if (identical(all.equal(param[1], "ML"), TRUE) | identical(all.equal(param[1], "L1"), TRUE) 
+      | identical(all.equal(param[1], "MP"), TRUE)) param.temp <- TRUE
+  else { if (!is.numeric(param) | !is.vector(param) | !identical(all.equal(length(param), N), TRUE)) 
     stop("param must be a numeric vector of length ", N, " or a character string 
          specifying the estimator to be used.")
     else param.temp <- FALSE
   }
-  if (length(alpha) != 1 | alpha <= 0 | alpha >= 1) 
+  if (!identical(all.equal(length(alpha), 1), TRUE) | alpha <= 0 | alpha >= 1) 
     stop("alpha must be a real number between 0 and 1, but it is ", alpha, ".")
   # end check arguments
   
@@ -40,30 +41,33 @@ function(data, param, alpha = 0.1, hide.outliers = FALSE,
   
   XDesi <- create.X(i1, i2) # creates a design matrix with i1+i2-1 rows, i1*i2 columns
   
-  if (param[1] == "ML"){ # Compute the ML estimator
+  if (identical(all.equal(param[1], "ML"), TRUE)){ # Compute the ML estimator
     temp <- glm.fit(t(XDesi), c(t(data)), family=poisson(log))
     STmator <- t(temp$coefficients)
     param.temp <- t(temp$fitted.values)
   }
   
-  if (param[1] == "L1"){  # Compute the L1 estimator 
+  if (identical(all.equal(param[1], "L1"), TRUE)){  # Compute the L1 estimator 
     STmator <- t(rq.fit.fnc(t(XDesi), c(t(log(data))), R=t(XDesi), r=rep(1,dim(XDesi)[2]),
                             eps=1e-05)$coefficients)
     param.temp <- exp(t(t(XDesi) %*% t(STmator)))
   }
   
-  if (param[1] == "MP") param.temp <- data - medpolish(data)$residuals
+  if (identical(all.equal(param[1], "MP"), TRUE)) param.temp <- data - medpolish(data)$residuals
   # Compute the median polish estimator 
   
   if (is.numeric(param.temp)) param <- param.temp
   temp.results <- matrix(ncol = 2, nrow = N)
   for (i in 1:N) temp.results[i,] <- unlist(aout.pois(data[i], param[i], alpha, 
                                                       hide.outliers = FALSE))
-  temp <- data.frame(data = c(data), is.outlier = (temp.results[,2] == 1),
-                     param = c(param))
-  if (hide.outliers == FALSE & show.estimates == TRUE) return(temp)
-  if (hide.outliers == FALSE & show.estimates == FALSE) return(temp[,c(1,2)])
-  if (hide.outliers == TRUE & show.estimates == TRUE) return(temp[temp[,2] == FALSE, 
-                                                                  c(1,3)])
-  if (hide.outliers == TRUE & show.estimates == FALSE) return(temp[temp[,2] == FALSE, 1])
+  temp <- data.frame(data = c(data), is.outlier = (temp.results[,2] == 1), param = c(param))
+  if (identical(all.equal(hide.outliers, FALSE), TRUE) & 
+        identical(all.equal(show.estimates, TRUE), TRUE)) return(temp)
+  if (identical(all.equal(hide.outliers, FALSE), TRUE) & 
+        identical(all.equal(show.estimates, FALSE), TRUE)) return(temp[,c(1,2)])
+  if (identical(all.equal(hide.outliers, TRUE), TRUE) & 
+        identical(all.equal(show.estimates, TRUE), TRUE)) return(temp[temp[,2] == FALSE, c(1,3)])
+  if (identical(all.equal(hide.outliers, TRUE), TRUE) & 
+        identical(all.equal(show.estimates, FALSE), TRUE)) return(temp[temp[,2] == FALSE, 1])
 }
+

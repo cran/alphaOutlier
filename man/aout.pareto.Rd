@@ -1,7 +1,7 @@
 \name{aout.pareto}
 \alias{aout.pareto}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Find \eqn{\alpha}-outliers in Pareto data.
+\title{Find \eqn{\alpha}-outliers in Pareto data
 }
 \description{Given the parameters of a Pareto distribution, \code{aout.pareto} identifies \eqn{\alpha}-outliers in a given data set.
 }

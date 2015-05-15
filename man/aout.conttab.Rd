@@ -1,7 +1,7 @@
 \name{aout.conttab}
 \alias{aout.conttab}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Find \eqn{\alpha}-outliers in two-way contingency tables.
+\title{Find \eqn{\alpha}-outliers in two-way contingency tables
 }
 \description{This is a wrapper function for \code{\link{aout.pois}}. We assume that each entry of a contingency table can be seen as a realization of a Poisson random variable. The parameter \eqn{\lambda} of each cell can either be set by the user or estimated. Given the parameters, \code{aout.conttab} identifies \eqn{\alpha}-outliers in a given contingency table.
 }

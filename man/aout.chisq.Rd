@@ -1,7 +1,7 @@
 \name{aout.chisq}
 \alias{aout.chisq}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Find \eqn{\alpha}-outliers in \eqn{\chi^2} data.
+\title{Find \eqn{\alpha}-outliers in \eqn{\chi^2} data
 }
 \description{Given the parameters of a \eqn{\chi^2} distribution, \code{aout.chisq} identifies \eqn{\alpha}-outliers in a given data set.
 }

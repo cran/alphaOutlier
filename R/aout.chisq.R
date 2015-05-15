@@ -5,11 +5,11 @@ function(data, param, alpha = 0.1, hide.outliers = FALSE, ncp = 0,
                        control.in = list(sigma = 0.1, maxit = 1000,
                                          xtol = 1e-12, ftol = 1e-12, btol = 1e-4)){
   # check arguments
-  if (!is.numeric(param) | !is.vector(param) | length(param) != 1) 
+  if (!is.numeric(param) | !is.vector(param) | !identical(all.equal(length(param), 1), TRUE)) 
     stop("param must be a numeric vector of length 1.")
   if (!is.numeric(data) | !is.vector(data)) 
     stop("data must be a numeric vector.")
-  if (length(alpha) != 1 | alpha <= 0 | alpha >= 1) 
+  if (!identical(all.equal(length(alpha), 1), TRUE) | alpha <= 0 | alpha >= 1) 
     stop("alpha must be a real number between 0 and 1, but it is ", alpha, ".")
   # end check arguments
   # determine the outlier region
@@ -34,7 +34,7 @@ function(data, param, alpha = 0.1, hide.outliers = FALSE, ncp = 0,
     # if the algorithm produces a regular jacobian, run the algorithm
     else { 
       # if the algorithm produces a singular jacobian...
-      if (dchisq(0, dfr, ncp) == 0)
+      if (identical(all.equal(dchisq(0, dfr, ncp), 0), TRUE))
         # if this cond. holds, we get the singular jacobian because of bad initial values
         temp.region <- nleqslv(c(0.1, upper), fn = fn2, alpha = a, freedom = dfr, 
                                noncen = ncp, method = method.in, global = global.in, 

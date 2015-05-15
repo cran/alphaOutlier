@@ -1,7 +1,7 @@
 \name{aout.nbinom}
 \alias{aout.nbinom}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Find \eqn{\alpha}-outliers in negative Binomial data.
+\title{Find \eqn{\alpha}-outliers in negative Binomial data
 }
 \description{Given the parameters of a negative Binomial distribution, \code{aout.nbinom} identifies \eqn{\alpha}-outliers in a given data set.
 }

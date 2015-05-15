@@ -1,7 +1,7 @@
 \name{aout.hyper}
 \alias{aout.hyper}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Find \eqn{\alpha}-outliers in hypergeometric data.
+\title{Find \eqn{\alpha}-outliers in hypergeometric data
 }
 \description{Given the parameters of a hypergeometric distribution, \code{aout.hyper} identifies \eqn{\alpha}-outliers in a given data set.
 }

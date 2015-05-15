@@ -1,7 +1,7 @@
 \name{aout.weibull}
 \alias{aout.weibull}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Find \eqn{\alpha}-outliers in Weibull data.
+\title{Find \eqn{\alpha}-outliers in Weibull data
 }
 \description{Given the parameters of a Weibull distribution, \code{aout.weibull} identifies \eqn{\alpha}-outliers in a given data set.
 }

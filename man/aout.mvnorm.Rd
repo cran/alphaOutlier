@@ -1,7 +1,7 @@
 \name{aout.mvnorm}
 \alias{aout.mvnorm}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Find \eqn{\alpha}-outliers in multivariate normal data.
+\title{Find \eqn{\alpha}-outliers in multivariate normal data
 }
 \description{Given the parameters of a multivariate normal distribution, \code{aout.mvnorm} identifies \eqn{\alpha}-outliers in a given data set.
 }

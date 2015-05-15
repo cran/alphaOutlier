@@ -1,7 +1,7 @@
 \name{aout.pois}
 \alias{aout.pois}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Find \eqn{\alpha}-outliers in Poisson count data.
+\title{Find \eqn{\alpha}-outliers in Poisson count data
 }
 \description{Given the parameters of a Poisson distribution, \code{aout.pois} identifies \eqn{\alpha}-outliers in a given data set.
 }

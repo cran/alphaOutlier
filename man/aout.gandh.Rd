@@ -1,7 +1,7 @@
 \name{aout.gandh}
 \alias{aout.gandh}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Find \eqn{\alpha}-outliers in data from the family of \eqn{g}-and-\eqn{h} distributions.
+\title{Find \eqn{\alpha}-outliers in data from the family of \eqn{g}-and-\eqn{h} distributions
 }
 \description{Given the parameters of a \eqn{g}-and-\eqn{h} distribution, \code{aout.gandh} identifies \eqn{\alpha}-outliers in a given data set.
 }

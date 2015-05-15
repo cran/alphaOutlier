@@ -1,7 +1,7 @@
 \name{aout.laplace}
 \alias{aout.laplace}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Find \eqn{\alpha}-outliers in Laplace / double exponential data.
+\title{Find \eqn{\alpha}-outliers in Laplace / double exponential data
 }
 \description{Given the parameters of a Laplace distribution, \code{aout.laplace} identifies \eqn{\alpha}-outliers in a given data set.
 }
