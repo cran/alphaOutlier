@@ -1,10 +1,10 @@
-42af42cad119cd8e7812ff9f775b54b4 *DESCRIPTION
-ad039abd3f14ccfe606ca6e7c3942088 *NAMESPACE
-885ef39d250f58a377b48617930b581a *NEWS
+79f7996d36efa2bbd7098f781029792b *DESCRIPTION
+375ab5604574b3ea0782725a7173c717 *NAMESPACE
+4eb417284da2c32d071a28eeca6e7b60 *NEWS
 1fe473e89697747802a2df098c2bc7bf *R/aout.binom.R
 706112783b49ce88de67e623dd5599ec *R/aout.cg.R
 41c8bd9faa5c107ed183947d51fda139 *R/aout.chisq.R
-a4d827b4dfe1675784e899e3251b3839 *R/aout.conttab.R
+ba8fefb9b102d65a3f563ec69865223a *R/aout.conttab.R
 fbc9625a3d4b47b8528b3a3fda4525fd *R/aout.exp.R
 4f8f4607654ffb8aaa50271b8f65fefe *R/aout.gandh.R
 d35c04a400aa2a320276c0272b825cce *R/aout.hyper.R
@@ -16,6 +16,7 @@ d35c04a400aa2a320276c0272b825cce *R/aout.hyper.R
 a0860ce801ef2c3b8f299e55b33fe176 *R/aout.pareto.R
 57a44db971a01a18eb5d8d0813158442 *R/aout.pois.R
 b17f581b7c3eeb77c96237349b45a459 *R/aout.weibull.R
+f25524859ccdc508defae5c4ce98a01a *R/createDesMat.R
 b9f236b3e73468095de881f63b7fea33 *data/citiesData.RData
 7be2d47cd2143cdf7946b7197dfca6db *data/daysabs.RData
 690688f135e819d2db66350e7cc1f3b5 *man/alphaOutlier-package.Rd
@@ -35,4 +36,5 @@ cdd6538991c14ad3a99a9725a14a3ee4 *man/aout.norm.Rd
 8f4bcc1d60b40a1521059f42dc2369b6 *man/aout.pois.Rd
 2654bd9b340d67ac288100e7921cb9b3 *man/aout.weibull.Rd
 752d30b82cd45b66d26cef40028485a9 *man/citiesData.Rd
+53a59a5548b1649744a4288f9f8ac672 *man/createDesMat.Rd
 d5776f90526185a035f7876906e7c1b7 *man/daysabs.Rd
