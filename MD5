@@ -1,6 +1,6 @@
-79f7996d36efa2bbd7098f781029792b *DESCRIPTION
-375ab5604574b3ea0782725a7173c717 *NAMESPACE
-4eb417284da2c32d071a28eeca6e7b60 *NEWS
+01c1afc12154fcac665556c660ff7a76 *DESCRIPTION
+26b29bb355168c4e8ce0dfe555407241 *NAMESPACE
+9bd462a5a60beb80f406c68995482b52 *NEWS
 1fe473e89697747802a2df098c2bc7bf *R/aout.binom.R
 706112783b49ce88de67e623dd5599ec *R/aout.cg.R
 41c8bd9faa5c107ed183947d51fda139 *R/aout.chisq.R
@@ -8,6 +8,7 @@ ba8fefb9b102d65a3f563ec69865223a *R/aout.conttab.R
 fbc9625a3d4b47b8528b3a3fda4525fd *R/aout.exp.R
 4f8f4607654ffb8aaa50271b8f65fefe *R/aout.gandh.R
 d35c04a400aa2a320276c0272b825cce *R/aout.hyper.R
+d8d5947a9b80c3e49017773f39a59beb *R/aout.kernel.R
 7145a384d54ae0710fa7ec7674f62c73 *R/aout.laplace.R
 1f2c7467f85842b7c320f5bb1210898b *R/aout.logis.R
 46f836f8d690d0666f913bacaa1978a7 *R/aout.mvnorm.R
@@ -23,10 +24,11 @@ b9f236b3e73468095de881f63b7fea33 *data/citiesData.RData
 7dadae071601956f06ba36a41111d429 *man/aout.binom.Rd
 489035935ff9ac74a1a7dac7b20d3f5c *man/aout.cg.Rd
 2748942d269804b70b8167b0a2ea0fce *man/aout.chisq.Rd
-c752e0b975c69c43960062bf6d91e1ac *man/aout.conttab.Rd
+6c652b6c4afae109d9531d8c93196454 *man/aout.conttab.Rd
 b26fc5334d081c53d8d22d77d24d472e *man/aout.exp.Rd
 ba4df17b52b54a31d08fc103d4160f2d *man/aout.gandh.Rd
 56e34c0df25a32e0585447a7dbf58acc *man/aout.hyper.Rd
+acdd628b4ed0133000df6e28241347eb *man/aout.kernel.Rd
 086c906325582de1618bb1e92415ec09 *man/aout.laplace.Rd
 51947abe6c927395d23505642b692581 *man/aout.logis.Rd
 270f85523b5b873383c8186e16b32dc9 *man/aout.mvnorm.Rd

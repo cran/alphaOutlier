@@ -13,7 +13,7 @@ aout.conttab(data, param, alpha = 0.1, hide.outliers = FALSE, show.estimates = F
   \item{data}{a matrix or data.frame. The contingency table to be examined.
 %%     ~~Describe \code{data} here~~
 }
-  \item{param}{a character string from \code{c("ML", "L1", "MP")} or a vector containing the parameters of each cell of the Poisson distribution: \eqn{\lambda}. \code{"ML"} yields the maximum likelihood estimate from the log-linear Poisson model using a suitable design matrix. \code{"L1"} yields the L1-estimate from \code{\link[quantreg:rq.fit.fnc]{rq.fit.fnc}}. \code{"MP"} yields the Median Polish estimate.
+  \item{param}{a character string from \code{c("ML", "L1", "MP")} or a vector containing the parameters of each cell of the Poisson distribution: \eqn{\lambda}. \code{"ML"} yields the maximum likelihood estimate from the log-linear Poisson model using a suitable design matrix. \code{"L1"} yields the L1-estimate from \code{\link[quantreg:rq.fit.fnc]{rq.fit.fnc}}. \code{"MP"} yields the Median Polish estimate. If the parameter vector is given by the user, it is necessary that the contingency table was filled \code{byrow = FALSE}.
 }
   \item{alpha}{an atomic vector. Determines the maximum amount of probability mass the outlier region may contain. Defaults to 0.1.
 }
