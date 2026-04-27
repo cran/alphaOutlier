@@ -17,9 +17,9 @@ Given the parameters of a distribution, the package uses the concept of \eqn{\al
 Gather, U.; Kuhnt, S.; Pawlitschko, J. (2003) Concepts of outlyingness for various data structures. In J. C. Misra (Ed.): \emph{Industrial Mathematics and Statistics}. New Delhi: Narosa Publishing House, 545-585.
 }
 
-\keyword{package
-distribution
-robust}
+\concept{distribution}
+\concept{robust statistics}
+
 \seealso{
 \code{\link[nleqslv:nleqslv]{nleqslv}},
 \code{\link[Rsolnp:solnp]{solnp}},
